@@ -1,4 +1,4 @@
-import * as React from "react";
+import "./styles/index.css"
 
 // component exports
 export * from "./Button";

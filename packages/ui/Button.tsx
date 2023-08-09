@@ -1,7 +1,5 @@
 "use client";
 
-import * as React from "react";
-
 export const Button = () => {
-  return <button onClick={() => alert("boop")}>Boop</button>;
+  return <button className="bg-blue-600" onClick={() => alert("boop")}>Boop</button>;
 };
