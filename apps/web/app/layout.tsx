@@ -1,22 +1,22 @@
-import { Metadata } from "next";
-import "./globals.css";
-import "ui/styles.css";
+import { Metadata } from 'next';
+import './globals.css';
+import 'ui/styles.css';
 
 export const metadata: Metadata = {
-    title: "Owl Chat",
-    icons: {
-        icon: "/favicon.ico",
-    }
-}
+  title: 'Owl Chat',
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
 
 export default function RootLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    return (
-        <html lang="en">
-            <body>{children}</body>
-        </html>
-    );
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  );
 }

@@ -1,12 +1,39 @@
 import { Meta } from "@storybook/blocks";
+import banner from "./assets/banner.png";
 
 <Meta title="Introduction" />
 
 <div className="">
     <div className="heading">
-    # Owl Chat
-    #### The Design System that powers Owl Chat
+
+      <img src={banner} />
+
+      # Owl Chat
+      #### ~ The Design System that powers Owl Chat ~
     </div>
+
+    <p align="center" className="badges">
+      <a href="https://github.com/kriptonian1/owl-chat">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+      </a>
+      
+      <a href="https://www.figma.com/file/KgrfPje3E9tWRdplNvSi6I/owl-chat?type=design&node-id=37%3A5966&mode=design&t=kCJr2hwERrxmTVe9-1">
+        <img src="https://img.shields.io/badge/Figma-EF629F?style=for-the-badge&logo=figma&logoColor=white" />
+      </a>
+      
+      <a href="https://tailwindcss.com/docs/installation">
+        <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+      </a>
+      
+      <a href="https://react.dev/reference/react">
+        <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+      </a>
+      
+      <a href="https://storybook.js.org/docs/">
+        <img src="https://img.shields.io/badge/storybook-20232A?style=for-the-badge&logo=storybook&logoColor=FF4785" />
+      </a>
+    </p>
+
 </div>
 
 <style>
@@ -15,7 +42,12 @@ import { Meta } from "@storybook/blocks";
   .heading {
     display: grid;
     justify-items: center;
-    }
+  }
 
+  .badges img {
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
   `}
 </style>

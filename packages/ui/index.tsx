@@ -1,4 +1,4 @@
-import "./styles/index.css"
+import "./styles/index.css";
 
 // component exports
 export * from "./Button";
