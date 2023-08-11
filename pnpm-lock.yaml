@@ -48,9 +48,11 @@ importers:
       '@storybook/addon-links': ^7.2.2
       '@storybook/addon-onboarding': ^1.0.8
       '@storybook/blocks': ^7.2.2
+      '@storybook/manager-api': ^7.2.2
       '@storybook/react': ^7.2.2
       '@storybook/react-vite': ^7.2.2
       '@storybook/testing-library': ^0.2.0
+      '@storybook/theming': ^7.2.2
       '@types/react': ^18.2.15
       '@types/react-dom': ^18.2.7
       '@typescript-eslint/eslint-plugin': ^6.0.0
@@ -75,9 +77,11 @@ importers:
       '@storybook/addon-links': 7.2.2_biqbaboplfbrettd7655fr4n2y
       '@storybook/addon-onboarding': 1.0.8_biqbaboplfbrettd7655fr4n2y
       '@storybook/blocks': 7.2.2_gltvt74xzh7f5lvw2hzxriz5bu
+      '@storybook/manager-api': 7.2.2_biqbaboplfbrettd7655fr4n2y
       '@storybook/react': 7.2.2_tvrvbu6r5w7oyqiu4bvze3slou
       '@storybook/react-vite': 7.2.2_46htx2r4pki4axdxasihiij3t4
       '@storybook/testing-library': 0.2.0
+      '@storybook/theming': 7.2.2_biqbaboplfbrettd7655fr4n2y
       '@types/react': 18.2.20
       '@types/react-dom': 18.2.7
       '@typescript-eslint/eslint-plugin': 6.3.0_7ypyz24px5cg2llisfsy3dmsaq
