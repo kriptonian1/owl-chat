@@ -22,31 +22,6 @@ importers:
       prettier: 2.8.8
       turbo: 1.10.12
 
-  apps/docs:
-    specifiers:
-      '@types/node': ^17.0.12
-      '@types/react': ^18.0.22
-      '@types/react-dom': ^18.0.7
-      eslint-config-custom: workspace:*
-      next: ^13.4.1
-      react: ^18.2.0
-      react-dom: ^18.2.0
-      tsconfig: workspace:*
-      typescript: ^4.5.3
-      ui: workspace:*
-    dependencies:
-      next: 13.4.1_biqbaboplfbrettd7655fr4n2y
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      ui: link:../../packages/ui
-    devDependencies:
-      '@types/node': 17.0.45
-      '@types/react': 18.2.5
-      '@types/react-dom': 18.2.3
-      eslint-config-custom: link:../../packages/eslint-config-custom
-      tsconfig: link:../../packages/tsconfig
-      typescript: 4.9.5
-
   apps/storybook-owl:
     specifiers:
       '@storybook/addon-essentials': ^7.2.2
@@ -64,19 +39,24 @@ importers:
       '@typescript-eslint/eslint-plugin': ^6.0.0
       '@typescript-eslint/parser': ^6.0.0
       '@vitejs/plugin-react-swc': ^3.3.2
+      autoprefixer: ^10.4.14
       eslint: ^8.45.0
       eslint-plugin-react-hooks: ^4.6.0
       eslint-plugin-react-refresh: ^0.4.3
       eslint-plugin-storybook: ^0.6.13
+      postcss: ^8.4.27
       react: ^18.2.0
       react-dom: ^18.2.0
       storybook: ^7.2.2
+      tailwind-config: workspace:*
+      tailwindcss: ^3.3.3
       typescript: ^5.0.2
       ui: workspace:*
       vite: ^4.4.5
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+      ui: link:../../packages/ui
     devDependencies:
       '@storybook/addon-essentials': 7.2.2_gltvt74xzh7f5lvw2hzxriz5bu
       '@storybook/addon-interactions': 7.2.2_gltvt74xzh7f5lvw2hzxriz5bu
@@ -93,13 +73,16 @@ importers:
       '@typescript-eslint/eslint-plugin': 6.3.0_7ypyz24px5cg2llisfsy3dmsaq
       '@typescript-eslint/parser': 6.3.0_qjkw45b3tljvcusgfgkwdbduhu
       '@vitejs/plugin-react-swc': 3.3.2_vite@4.4.9
+      autoprefixer: 10.4.14_postcss@8.4.27
       eslint: 8.46.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.46.0
       eslint-plugin-react-refresh: 0.4.3_eslint@8.46.0
       eslint-plugin-storybook: 0.6.13_qjkw45b3tljvcusgfgkwdbduhu
+      postcss: 8.4.27
       storybook: 7.2.2
+      tailwind-config: link:../../packages/tailwindConfig
+      tailwindcss: 3.3.3
       typescript: 5.0.4
-      ui: link:../../packages/ui
       vite: 4.4.9
 
   apps/web:

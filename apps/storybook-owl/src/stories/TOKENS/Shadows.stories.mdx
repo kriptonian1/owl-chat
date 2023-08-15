@@ -1,0 +1,29 @@
+import { Meta } from "@storybook/blocks";
+import "../../index.css";
+
+<Meta title="Tokens/Shadows" />
+
+export const Shadow = ({ className }) => (
+    <>
+        <div className="grid w-fit">
+            <div className={`${className} w-[30vw] h-[20vh] bg-white rounded-[35px]`} />
+            <p className="text-gray-500 text-center">{className}</p>
+        </div>
+    </>
+);
+
+# 🪞 Shadows
+
+This shadows are taken from Tailwind v3.3.2
+
+---
+
+<Shadow className={"shadow-none"} />
+<Shadow className={"shadow-sm"} />
+<Shadow className={"shadow"} />
+<Shadow className={"shadow-md"} />
+<Shadow className={"shadow-lg"} />
+<Shadow className={"shadow-xl"} />
+<Shadow className={"shadow-2xl"} />
+<Shadow className={"shadow-inner"} />
+
