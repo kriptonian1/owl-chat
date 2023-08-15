@@ -1,5 +1,3 @@
-declare const Header: ({ text }: {
-    text: string;
-}) => JSX.Element;
+declare const Header: ({ text }: { text: string }) => JSX.Element;
 
 export { Header };
