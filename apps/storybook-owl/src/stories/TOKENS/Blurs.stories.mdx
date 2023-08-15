@@ -1,0 +1,30 @@
+import { Meta } from "@storybook/blocks";
+import "../../index.css";
+import LightGradient from "../assets/LightGradient.png"
+
+<Meta title="Tokens/Blurs" />
+
+export const Blur = ({ className }) => (
+    <>
+        <div className="grid w-fit my-36">
+            <img src={LightGradient} className={`${className} w-[30rem] h-[20rem] rounded-[35px]`} />
+            <p className="text-gray-500 text-center">{className}</p>
+        </div>
+    </>
+);
+
+# 🌫️ Blurs
+
+This Blurs are taken from Tailwind v3.3.2
+
+---
+
+
+<Blur className="blur-none" />
+<Blur className="blur-sm" />
+<Blur className="blur" />
+<Blur className="blur-md" />
+<Blur className="blur-lg" />
+<Blur className="blur-xl" />
+<Blur className="blur-2xl" />
+<Blur className="blur-3xl" />

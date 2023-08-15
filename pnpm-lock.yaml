@@ -8,109 +8,69 @@ importers:
 
   .:
     devDependencies:
-      '@commitlint/cli':
-        specifier: ^17.7.1
-        version: 17.7.1
-      '@commitlint/config-conventional':
-        specifier: ^17.7.0
-        version: 17.7.0
-      '@turbo/gen':
-        specifier: ^1.9.7
-        version: 1.9.7(@types/node@17.0.45)(typescript@4.9.5)
-      eslint:
-        specifier: ^7.32.0
-        version: 7.32.0
-      eslint-config-custom:
-        specifier: workspace:*
-        version: link:packages/eslint-config-custom
-      husky:
-        specifier: ^8.0.3
-        version: 8.0.3
-      prettier:
-        specifier: ^2.5.1
-        version: 2.8.8
-      turbo:
-        specifier: latest
-        version: 1.10.12
+      '@commitlint/cli': 17.7.1
+      '@commitlint/config-conventional': 17.7.0
+      '@turbo/gen': 1.9.7_7yyumlbuqtg3pr5dxvk56zmd34
+      eslint: 7.32.0
+      eslint-config-custom: link:packages/eslint-config-custom
+      husky: 8.0.3
+      prettier: 2.8.8
+      turbo: 1.10.12
 
   apps/storybook-owl:
+    specifiers:
+      '@storybook/addon-essentials': ^7.2.2
+      '@storybook/addon-interactions': ^7.2.2
+      '@storybook/addon-links': ^7.2.2
+      '@storybook/addon-onboarding': ^1.0.8
+      '@storybook/blocks': ^7.2.2
+      '@storybook/manager-api': ^7.2.2
+      '@storybook/react': ^7.2.2
+      '@storybook/react-vite': ^7.2.2
+      '@storybook/testing-library': ^0.2.0
+      '@storybook/theming': ^7.2.2
+      '@types/react': ^18.2.15
+      '@types/react-dom': ^18.2.7
+      '@typescript-eslint/eslint-plugin': ^6.0.0
+      '@typescript-eslint/parser': ^6.0.0
+      '@vitejs/plugin-react-swc': ^3.3.2
+      eslint: ^8.45.0
+      eslint-plugin-react-hooks: ^4.6.0
+      eslint-plugin-react-refresh: ^0.4.3
+      eslint-plugin-storybook: ^0.6.13
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      storybook: ^7.2.2
+      typescript: ^5.0.2
+      ui: workspace:*
+      vite: ^4.4.5
     dependencies:
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     devDependencies:
-      '@storybook/addon-essentials':
-        specifier: ^7.2.2
-        version: 7.2.2(@types/react-dom@18.2.7)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/addon-interactions':
-        specifier: ^7.2.2
-        version: 7.2.2(@types/react-dom@18.2.7)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/addon-links':
-        specifier: ^7.2.2
-        version: 7.2.2(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/addon-onboarding':
-        specifier: ^1.0.8
-        version: 1.0.8(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/blocks':
-        specifier: ^7.2.2
-        version: 7.2.2(@types/react-dom@18.2.7)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/manager-api':
-        specifier: ^7.2.2
-        version: 7.2.2(react-dom@18.2.0)(react@18.2.0)
-      '@storybook/react':
-        specifier: ^7.2.2
-        version: 7.2.2(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.4)
-      '@storybook/react-vite':
-        specifier: ^7.2.2
-        version: 7.2.2(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.4)(vite@4.4.9)
-      '@storybook/testing-library':
-        specifier: ^0.2.0
-        version: 0.2.0
-      '@storybook/theming':
-        specifier: ^7.2.2
-        version: 7.2.2(react-dom@18.2.0)(react@18.2.0)
-      '@types/react':
-        specifier: ^18.2.15
-        version: 18.2.20
-      '@types/react-dom':
-        specifier: ^18.2.7
-        version: 18.2.7
-      '@typescript-eslint/eslint-plugin':
-        specifier: ^6.0.0
-        version: 6.3.0(@typescript-eslint/parser@6.3.0)(eslint@8.46.0)(typescript@5.0.4)
-      '@typescript-eslint/parser':
-        specifier: ^6.0.0
-        version: 6.3.0(eslint@8.46.0)(typescript@5.0.4)
-      '@vitejs/plugin-react-swc':
-        specifier: ^3.3.2
-        version: 3.3.2(vite@4.4.9)
-      eslint:
-        specifier: ^8.45.0
-        version: 8.46.0
-      eslint-plugin-react-hooks:
-        specifier: ^4.6.0
-        version: 4.6.0(eslint@8.46.0)
-      eslint-plugin-react-refresh:
-        specifier: ^0.4.3
-        version: 0.4.3(eslint@8.46.0)
-      eslint-plugin-storybook:
-        specifier: ^0.6.13
-        version: 0.6.13(eslint@8.46.0)(typescript@5.0.4)
-      storybook:
-        specifier: ^7.2.2
-        version: 7.2.2
-      typescript:
-        specifier: ^5.0.2
-        version: 5.0.4
-      ui:
-        specifier: workspace:*
-        version: link:../../packages/ui
-      vite:
-        specifier: ^4.4.5
-        version: 4.4.9(@types/node@17.0.45)
+      '@storybook/addon-essentials': 7.2.2_gltvt74xzh7f5lvw2hzxriz5bu
+      '@storybook/addon-interactions': 7.2.2_gltvt74xzh7f5lvw2hzxriz5bu
+      '@storybook/addon-links': 7.2.2_biqbaboplfbrettd7655fr4n2y
+      '@storybook/addon-onboarding': 1.0.8_biqbaboplfbrettd7655fr4n2y
+      '@storybook/blocks': 7.2.2_gltvt74xzh7f5lvw2hzxriz5bu
+      '@storybook/manager-api': 7.2.2_biqbaboplfbrettd7655fr4n2y
+      '@storybook/react': 7.2.2_tvrvbu6r5w7oyqiu4bvze3slou
+      '@storybook/react-vite': 7.2.2_46htx2r4pki4axdxasihiij3t4
+      '@storybook/testing-library': 0.2.0
+      '@storybook/theming': 7.2.2_biqbaboplfbrettd7655fr4n2y
+      '@types/react': 18.2.20
+      '@types/react-dom': 18.2.7
+      '@typescript-eslint/eslint-plugin': 6.3.0_7ypyz24px5cg2llisfsy3dmsaq
+      '@typescript-eslint/parser': 6.3.0_qjkw45b3tljvcusgfgkwdbduhu
+      '@vitejs/plugin-react-swc': 3.3.2_vite@4.4.9
+      eslint: 8.46.0
+      eslint-plugin-react-hooks: 4.6.0_eslint@8.46.0
+      eslint-plugin-react-refresh: 0.4.3_eslint@8.46.0
+      eslint-plugin-storybook: 0.6.13_qjkw45b3tljvcusgfgkwdbduhu
+      storybook: 7.2.2
+      typescript: 5.0.4
+      ui: link:../../packages/ui
+      vite: 4.4.9
 
   apps/web:
     dependencies:

@@ -1,0 +1,95 @@
+import { Meta } from "@storybook/blocks";
+import "../../index.css";
+
+<Meta title="Tokens/Colors" />
+
+export const Color = ({hex, className}) => 
+<>
+    <div className="grid w-fit">
+    	<div className={`w-[128px] h-[50px] ${className} rounded`}/>
+    	<div className="flex justify-between">
+    		<p>{className.split("-")[2]}</p>
+    		<p>{hex}</p>
+    	</div>
+    </div>
+</>;
+
+# 🎨 Colors
+
+This color are taken from Tailwind v3.3.2
+
+## Base Colors
+
+<div className="flex gap-x-4">
+	<div className="grid w-fit">
+		<div className="w-[128px] h-[50px] bg-black rounded"/>
+		<div className="flex justify-between">
+			<p>Black</p>
+			<p>#000000</p>
+		</div>
+	</div>
+
+    <div className="grid w-fit">
+    	<div className="w-[128px] h-[50px] bg-white rounded border border-gray-200"/>
+    	<div className="flex justify-between">
+    		<p>White</p>
+    		<p>#ffffff</p>
+    	</div>
+
+    </div>
+
+</div>
+
+## Slate Colors
+
+<div className="flex gap-x-4">
+
+    <Color hex={"#f8fafc"} className={"bg-slate-50"}/>
+    <Color hex={"#f1f5f9"} className={"bg-slate-100"}/>
+    <Color hex={"#e2e8f0"} className={"bg-slate-200"}/>
+	<Color hex={"#cbd5e1"} className={"bg-slate-300"}/>
+	<Color hex={"#94a3b8"} className={"bg-slate-400"}/>
+	<Color hex={"#64748b"} className={"bg-slate-500"}/>
+	<Color hex={"#475569"} className={"bg-slate-600"}/>
+	<Color hex={"#334155"} className={"bg-slate-700"}/>
+	<Color hex={"#1e293b"} className={"bg-slate-800"}/>
+	<Color hex={"#0f172a"} className={"bg-slate-900"}/>
+	<Color hex={"#0f172a"} className={"bg-slate-950"}/>
+
+</div>
+
+## Gray Colors
+
+<div className="flex gap-x-4">
+
+	<Color hex={"#f9fafb"} className={"bg-gray-50"}/>
+    <Color hex={"#f3f4f6"} className={"bg-gray-100"}/>
+    <Color hex={"#e5e7eb"} className={"bg-gray-200"}/>
+	<Color hex={"#d1d5db"} className={"bg-gray-300"}/>
+	<Color hex={"#9ca3af"} className={"bg-gray-400"}/>
+	<Color hex={"#6b7280"} className={"bg-gray-500"}/>
+	<Color hex={"#4b5563"} className={"bg-gray-600"}/>
+	<Color hex={"#374151"} className={"bg-gray-700"}/>
+	<Color hex={"#1f2937"} className={"bg-gray-800"}/>
+	<Color hex={"#111827"} className={"bg-gray-900"}/>
+	<Color hex={"#030712"} className={"bg-gray-950"}/>
+
+</div>
+
+## Zinc Colors
+
+<div className="flex gap-x-4">
+
+    <Color hex={"#fafafa"} className={"bg-zinc-50"}/>
+    <Color hex={"#f4f4f5"} className={"bg-zinc-100"}/>
+    <Color hex={"#e5e7eb"} className={"bg-zinc-200"}/>
+	<Color hex={"#d1d5db"} className={"bg-zinc-300"}/>
+	<Color hex={"#9ca3af"} className={"bg-zinc-400"}/>
+	<Color hex={"#6b7280"} className={"bg-zinc-500"}/>
+	<Color hex={"#4b5563"} className={"bg-zinc-600"}/>
+	<Color hex={"#374151"} className={"bg-zinc-700"}/>
+	<Color hex={"#1f2937"} className={"bg-zinc-800"}/>
+	<Color hex={"#111827"} className={"bg-zinc-900"}/>
+	<Color hex={"#030712"} className={"bg-zinc-950"}/>
+
+</div>
