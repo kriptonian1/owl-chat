@@ -25,7 +25,7 @@
         "typescript": "^4.5.2"
     },
     "exports": {
-        ".": "./dist",
+        ".": "./index.tsx",
         "./styles.css": "./dist/index.css"
     },
     "sideEffects": [

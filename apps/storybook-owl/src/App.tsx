@@ -1,9 +1,12 @@
+import { Header } from "ui/Header";
+
 function App() {
-  return (
-    <>
-      <div className="bg-red-500">Hey</div>
-    </>
-  );
+    return (
+        <>
+            <Header text="hey" />
+            {/* <Button /> */}
+        </>
+    );
 }
 
 export default App;

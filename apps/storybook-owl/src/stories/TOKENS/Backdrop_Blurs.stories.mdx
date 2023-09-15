@@ -1,8 +1,37 @@
 import { Meta } from "@storybook/blocks";
 import "../../index.css";
+import Background from "../assets/background.png";
 
 <Meta title="Tokens/Backdrop Blur" />
+
+export const BackdropBlur = ({ className }) => (
+    <>
+        <div className="grid w-fit mt-10">
+            <div className="relative flex items-center justify-center">
+                <div
+                    className={`${className} absolute bg-white/50 w-[27rem] h-[17rem] rounded-[37px]`}
+                />
+                <img
+                    src={Background}
+                    className={` w-[30rem] h-[20rem] rounded-[35px]`}
+                />
+            </div>
+            <p className="text-gray-500 text-center">{className}</p>
+        </div>
+    </>
+);
 
 # 🪟 Backdrop Blurs
 
 This Backdrop Blurs are taken from Tailwind v3.3.2
+
+---
+
+<BackdropBlur className="backdrop-blur-none"/>
+<BackdropBlur className="backdrop-blur-sm"/>
+<BackdropBlur className="backdrop-blur"/>
+<BackdropBlur className="backdrop-blur-md"/>
+<BackdropBlur className="backdrop-blur-lg"/>
+<BackdropBlur className="backdrop-blur-xl"/>
+<BackdropBlur className="backdrop-blur-2xl"/>
+<BackdropBlur className="backdrop-blur-3xl"/>
