@@ -1,11 +1,13 @@
 'use client';
-import { Button } from 'ui';
+import { Avatar, Button, RecieveBubble } from 'ui';
+
 
 export default function Page() {
   return (
     <>
-      <Button />
-      <div className="bg-slate-800 text-white">test</div>
+      {/* <Button /> */}
+      <Avatar src='' alt='' active={true}/>
+      {/* <div className="bg-slate-800 text-white">test</div> */}
     </>
   );
 }
