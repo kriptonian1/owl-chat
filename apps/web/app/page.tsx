@@ -1,12 +1,18 @@
 'use client';
-import { Avatar, Button, RecieveBubble } from 'ui';
-
+import { AvatarCard, Button, RecieveBubble } from 'ui';
 
 export default function Page() {
   return (
     <>
       {/* <Button /> */}
-      <Avatar src='' alt='' active={false}/>
+      <AvatarCard
+        name={"Tiku"}
+        message={"massege"}
+        src={""}
+        alt={"test"}
+        active={true}
+        timestamp={"2.23pm"}
+      />
       {/* <div className="bg-slate-800 text-white">test</div> */}
     </>
   );

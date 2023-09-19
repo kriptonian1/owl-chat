@@ -1,3 +1,3 @@
-import Avatar from "./Avatar";
+import AvatarCard from "./AvatarCard";
 
-export { Avatar }
+export { AvatarCard };
