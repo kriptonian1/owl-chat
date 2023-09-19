@@ -1,8 +1,8 @@
 'use strict';
 
-var chunkTKGRWKZU_js = require('../../chunk-TKGRWKZU.js');
+var chunkZ5SJQDAH_js = require('../../chunk-Z5SJQDAH.js');
 require('../../chunk-XYTEPVJV.js');
 
 
 
-module.exports = chunkTKGRWKZU_js.a;
+module.exports = chunkZ5SJQDAH_js.a;

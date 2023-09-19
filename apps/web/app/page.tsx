@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <>
       {/* <Button /> */}
-      <Avatar src='' alt='' active={true}/>
+      <Avatar src='' alt='' active={false}/>
       {/* <div className="bg-slate-800 text-white">test</div> */}
     </>
   );
