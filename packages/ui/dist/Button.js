@@ -1,11 +1,11 @@
 'use strict';
 
-var chunkKH4LRWHA_js = require('./chunk-KH4LRWHA.js');
-require('./chunk-XYTEPVJV.js');
+var chunkRP6MRTFY_js = require('./chunk-RP6MRTFY.js');
+require('./chunk-HNUKJE66.js');
 
 
 
 Object.defineProperty(exports, 'Button', {
 	enumerable: true,
-	get: function () { return chunkKH4LRWHA_js.a; }
+	get: function () { return chunkRP6MRTFY_js.a; }
 });
