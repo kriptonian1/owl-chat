@@ -8,6 +8,9 @@ export default function NotificationCount({ count }: Props) {
     if (count > 100) {
       setIndicator(false);
     }
+    else {
+      setIndicator(true);
+    }
   }, [count]);
 
   return (

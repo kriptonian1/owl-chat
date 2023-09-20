@@ -28,7 +28,7 @@ export default function Card({
             <p className="text-white">{message}</p>
           </div>
           <div className=" relative flex flex-col items-end">
-            <NotificationCount count={38} />
+            <NotificationCount count={338} />
             <p className="text-white">{timestamp}</p>
           </div>
         </div>
