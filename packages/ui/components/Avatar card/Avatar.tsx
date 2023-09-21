@@ -6,7 +6,7 @@ interface AvatarProps {
 export default function Avatar({ src, alt, active }: AvatarProps) {
   return (
     <>
-      <div className="inline-flex flex-col-reverse items-end relative">
+      <div className="flex flex-col-reverse items-end relative">
     
       <div className="absolute right-1">
         {active ? (

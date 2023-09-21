@@ -17,8 +17,8 @@ export default function NotificationCount({ count }: Props) {
     <>
       <div
         className={`bg-blue-500 rounded-full text-white text-xs ${
-          indicator ? "w-4" : "w-7"
-        } h-4 flex items-center justify-center`}
+          indicator ? "w-5" : "w-7"
+        } h-5 flex items-center justify-center`}
         
         
       >
