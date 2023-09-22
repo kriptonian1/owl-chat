@@ -1,21 +1,28 @@
 'use strict';
 
-var chunkKH4LRWHA_js = require('./chunk-KH4LRWHA.js');
-var chunk2LTAHDCB_js = require('./chunk-2LTAHDCB.js');
-var chunkZ5RAGIZ5_js = require('./chunk-Z5RAGIZ5.js');
-require('./chunk-XYTEPVJV.js');
+var chunkV3IPEL7M_js = require('./chunk-V3IPEL7M.js');
+var chunkNVJ63A5T_js = require('./chunk-NVJ63A5T.js');
+var chunkRP6MRTFY_js = require('./chunk-RP6MRTFY.js');
+var chunkDQWSYVWV_js = require('./chunk-DQWSYVWV.js');
+require('./chunk-BHWIMD5T.js');
+require('./chunk-RNRTKNSQ.js');
+require('./chunk-HNUKJE66.js');
 
 
 
-Object.defineProperty(exports, 'Button', {
-	enumerable: true,
-	get: function () { return chunkKH4LRWHA_js.a; }
-});
 Object.defineProperty(exports, 'RecieveBubble', {
 	enumerable: true,
-	get: function () { return chunk2LTAHDCB_js.a; }
+	get: function () { return chunkV3IPEL7M_js.a; }
 });
 Object.defineProperty(exports, 'SentBubble', {
 	enumerable: true,
-	get: function () { return chunkZ5RAGIZ5_js.a; }
+	get: function () { return chunkNVJ63A5T_js.a; }
+});
+Object.defineProperty(exports, 'Button', {
+	enumerable: true,
+	get: function () { return chunkRP6MRTFY_js.a; }
+});
+Object.defineProperty(exports, 'AvatarCard', {
+	enumerable: true,
+	get: function () { return chunkDQWSYVWV_js.a; }
 });
