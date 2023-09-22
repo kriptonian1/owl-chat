@@ -4,25 +4,27 @@ interface Props {
 }
 export default function NotificationCount({ count }: Props) {
   const [indicator, setIndicator] = useState(true);
+  const [notify, setNotify] = useState(false);
+
   useEffect(() => {
     if (count > 100) {
       setIndicator(false);
+    } if (count > 0 && count <= 100) {
+      setIndicator(true);
     }
     else {
-      setIndicator(true);
+      setNotify(true);
     }
   }, [count]);
 
   return (
     <>
       <div
-        className={`bg-blue-500 rounded-full text-white text-xs ${
-          indicator ? "w-5" : "w-7"
-        } h-5 flex items-center justify-center`}
-        
-        
+        className={`bg-blue-500 rounded-full text-white text-sm ${
+          indicator ? "w-5" : "w-7 "
+        } ${notify ? "":"invisible"} flex items-center justify-center m-1`}
       >
-        {count > 100 ? "99+" : count}
+        {count <= 0 ? "" : count > 100 ? "99+" : count}
       </div>
     </>
   );
