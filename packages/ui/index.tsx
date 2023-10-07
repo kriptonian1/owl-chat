@@ -4,4 +4,3 @@ import "./styles/index.css";
 
 export * from "./components/chatbubble";
 export * from "./components/Avatar card";
-

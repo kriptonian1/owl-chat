@@ -6,12 +6,12 @@ export default function Page() {
     <>
       {/* <Button /> */}
       <AvatarCard
-        name={"Tiku"}
-        message={"massege"}
-        src={""}
-        alt={"test"}
+        name={'Tiku'}
+        message={'massege'}
+        src={''}
+        alt={'test'}
         active={true}
-        timestamp={"2.23pm"}
+        timestamp={'2.23pm'}
         count={11}
       />
       {/* <div className="bg-slate-800 text-white">test</div> */}
