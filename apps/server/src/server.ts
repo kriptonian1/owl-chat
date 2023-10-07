@@ -16,40 +16,38 @@ dotenv.config();
  * processes created by the `cluster.fork()` method.
  */
 const spawnWorker = (i: number, workers: any) => {
-    workers[i] = cluster.fork();
+  workers[i] = cluster.fork();
 
-    // Restart worker on exit
-    workers[i].on("exit", () => {
-        console.log(`Worker ${i} exited`);
-        spawnWorker(i, workers);
-    });
+  // Restart worker on exit
+  workers[i].on("exit", () => {
+    console.log(`Worker ${i} exited`);
+    spawnWorker(i, workers);
+  });
 };
 
 (async () => {
-    if (cluster.isPrimary) {
-        // Check if the process is the master process
-        const workers: any = [];
+  if (cluster.isPrimary) {
+    // Check if the process is the master process
+    const workers: any = [];
 
-        // Spawn workers
-        for (let index = 0; index < totalCPUs; index++) {
-            spawnWorker(index, workers);
-        }
-    } else {
-        const app: Express = express();
-
-        app.get("/", (req: Request, res: Response) => {
-            res.send("Hello World!");
-        });
-
-        var server: http.Server = app.listen(process.env.PORT, () => {
-            let host = server.address() as AddressInfo;
-            console.log(
-                `\x1b[32m Server is listening on port  ${
-                    host.address === "::"
-                        ? "http://localhost"
-                        : `https://${host}`
-                }:${host.port} \x1b[0m`
-            );
-        });
+    // Spawn workers
+    for (let index = 0; index < totalCPUs; index++) {
+      spawnWorker(index, workers);
     }
+  } else {
+    const app: Express = express();
+
+    app.get("/", (req: Request, res: Response) => {
+      res.send("Hello World!");
+    });
+
+    var server: http.Server = app.listen(process.env.PORT, () => {
+      let host = server.address() as AddressInfo;
+      console.log(
+        `\x1b[32m Server is listening on port  ${
+          host.address === "::" ? "http://localhost" : `https://${host}`
+        }:${host.port} \x1b[0m`
+      );
+    });
+  }
 })();

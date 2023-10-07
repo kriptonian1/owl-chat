@@ -48,9 +48,7 @@ const spawnWorker = (i, workers) => {
         });
         var server = app.listen(process.env.PORT, () => {
             let host = server.address();
-            console.log(`\x1b[32m Server is listening on port  ${host.address === "::"
-                ? "http://localhost"
-                : `https://${host}`}:${host.port} \x1b[0m`);
+            console.log(`\x1b[32m Server is listening on port  ${host.address === "::" ? "http://localhost" : `https://${host}`}:${host.port} \x1b[0m`);
         });
     }
 }))();
