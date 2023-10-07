@@ -1,21 +1,26 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^17.7.1",
-    "@commitlint/config-conventional": "^17.7.0",
-    "@turbo/gen": "^1.9.7",
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "workspace:*",
-    "husky": "^8.0.3",
-    "prettier": "^2.5.1",
-    "turbo": "latest"
-  },
-  "packageManager": "pnpm@8.6.10",
-  "name": "owl-chat"
+    "private": true,
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev",
+        "lint": "turbo run lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^17.7.1",
+        "@commitlint/config-conventional": "^17.7.0",
+        "@turbo/gen": "^1.9.7",
+        "eslint": "^7.32.0",
+        "eslint-config-custom": "workspace:*",
+        "husky": "^8.0.3",
+        "prettier": "^2.5.1",
+        "turbo": "latest"
+    },
+    "packageManager": "pnpm@8.6.10",
+    "name": "owl-chat",
+    "engines": {
+        "node": ">=14.0.0",
+        "pnpm": ">=6.0.0",
+        "npm": "not supported"
+    }
 }
